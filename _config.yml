@@ -6,7 +6,7 @@ favicon: 'assets/images/favicon.ico'
 baseurl: ''
 disqus: 'demowebsite'
 email: 'blog@anotherbloodyproject.com'
-mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+#mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
 
 include: ["_pages"]
 permalink: /:title/
@@ -25,15 +25,16 @@ authors:
       avatar:         /assets/images/alexAvatar.jpg
       bio:            "Tinkerer at large, bodger of things and general nuisance.  Expert at starting projects."
       email:          alex@anotherbloodyproject.com
-      twitter:        https://twitter.com/wowthemesnet
+      instagram:      https://www.instagram.com/
+      #twitter:        https://twitter.com/wowthemesnet
 
-    jane:
-      name:           Jane
-      site:           https://www.wowthemes.net
-      avatar:         /assets/images/avatar2.jpg
-      bio:            "Blogger, fashionista, love to explore new ideas and write on my morning coffee!"
-      email:          fakemail@gmail.com
-      twitter:        https://twitter.com/wowthemesnet
+      #jane:
+      #name:           Jane
+      #site:           https://www.wowthemes.net
+      #avatar:         /assets/images/avatar2.jpg
+      #bio:            "Blogger, fashionista, love to explore new ideas and write on my morning coffee!"
+      #email:          fakemail@gmail.com
+      #twitter:        https://twitter.com/wowthemesnet
  
 # Defaults
 defaults:
