@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+        <h1 class="font-weight-bold title h6 text-uppercase mb-4">Project</h1>
+            
+        
+        <h4 class="font-weight-bold spanborder text-capitalize" id=""><span>{{ page.title }}</span></h4>
+        {% assign project_posts = site.posts | where:"project_name",page.title %} 
+        {% for project_post in project_posts %}     
+        {% if post.title != null %}
+          {% if group == null or group == post.group %}
+            {% include main-loop-card.html %}
+          {% endif %}
+        {% endif %}
+        {% endfor %}
+        {% assign pages_list = nil %}
+        {% assign group = nil %}
+
+        {% endfor %}
+
+        </div>
+        
+    </div>
+</div>

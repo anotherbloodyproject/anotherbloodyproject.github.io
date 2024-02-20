@@ -1,0 +1,76 @@
+# Site
+name: 'AnotherBloodyProject'
+description: 'Blog for a tinkerer, bodger and general maker of mess'
+logo: 'assets/images/logo.png'
+favicon: 'assets/images/favicon.ico'
+baseurl: ''
+disqus: 'demowebsite'
+email: 'blog@anotherbloodyproject.com'
+#mailchimp-list: 'https://wowthemes.us11.list-manage.com/subscribe/post?u=8aeb20a530e124561927d3bd8&amp;id=8c3d2d214b'
+
+include: ["_pages"]
+permalink: /:title/
+
+# Plugins
+plugins: 
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-seo-tag
+  
+authors:
+    alex:
+      name:           Alex
+      site:           https://anotherbloodyproject.com
+      avatar:         assets/images/alexAvatar.jpg
+      bio:            "Tinkerer at large, bodger of things and general nuisance.  Expert at starting projects."
+      email:          alex@anotherbloodyproject.com
+      instagram:      https://www.instagram.com/anotherbloodyproject
+      #twitter:        https://twitter.com/wowthemesnet
+
+      #jane:
+      #name:           Jane
+      #site:           https://www.wowthemes.net
+      #avatar:         /assets/images/avatar2.jpg
+      #bio:            "Blogger, fashionista, love to explore new ideas and write on my morning coffee!"
+      #email:          fakemail@gmail.com
+      #twitter:        https://twitter.com/wowthemesnet
+ 
+# Defaults
+defaults:
+
+  # all posts
+  - scope:
+      path: "_posts"
+    values:
+      layout: post
+      author: Alex
+      avatar: assets/images/alexAvatar.jpg
+      projectname: none
+      projectpart: 0
+
+   # all posts
+  - scope:
+      path: "_projects"
+    values:
+      layout: project
+      author: Alex
+      avatar: assets/images/alexAvatar.jpg
+      
+  # all pages
+  - scope:
+      path: "_pages"
+    values:
+      layout: page
+      
+# Syntax
+markdown: kramdown
+highlighter: rouge
+
+# Paginate
+paginate: 10
+
+
+
+# Exclude metadata and development time dependencies (like Grunt plugins)
+exclude: [README.markdown, package.json, grunt.js, Gruntfile.js, Gruntfile.coffee, node_modules]
