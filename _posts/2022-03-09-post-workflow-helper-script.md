@@ -11,12 +11,13 @@ It struck me, it might be useful to have a quick helper script to make the setup
 
 To that end I've went and written a little bash helper script to allow me to generate a post and the associated image directories as a one liner from the terminal. I've included some functionality to allow me to create older posts as well as I'd like to document some older projects I've done as well and give this thing some history.  It's not the most advanced script in the world, but it does the job.
 
-If you'd like to make use of the script you can grab it from the github repo here:
+If you'd like to make use of the script you can grab it from the github repo [here](https://github.com/anotherbloodyproject/postHelper){:target="_blank"}{:rel="noopener noreferrer"}
 
-Or alternatively:
+I've added to my .bashrc with as an alias with:
 
-wget method
-add to bashrc
+```
+alias mkpost="/path/to/repo/src/bash/mkpost.sh"
+```
 
 ## How to use
 
